@@ -1,14 +1,14 @@
-# OdontoCA v1.9.2 — SDD 5.0, TDD 5.0 e Fluxograma Interativo
+# OdontoCA v1.9.2 â€” SDD 5.0, TDD 5.0 e Fluxograma Interativo
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XnrsVU2u1Cq9igbRJHralBQrgtCYaksW)
 [![Notebook](https://img.shields.io/badge/notebook-v1.9.2-2f81f7?logo=jupyter)](./OdontoCA_v1_9_2_FLUXOGRAMA_INTERATIVO_PAN_ZOOM.ipynb)
 [![SDD](https://img.shields.io/badge/SDD-5.0-5b5bd6)](#sdd-50--tdd-50)
 [![TDD](https://img.shields.io/badge/TDD-5.0-7a52c7)](#sdd-50--tdd-50)
-[![Status](https://img.shields.io/badge/status-pesquisa%20%7C%20não%20validado%20clinicamente-orange)](#limitações-e-segurança)
+[![Status](https://img.shields.io/badge/status-pesquisa%20%7C%20nÃ£o%20validado%20clinicamente-orange)](#limitaÃ§Ãµes-e-seguranÃ§a)
 
-> Pipeline científico multimodal, reproduzível e orientado por dados reais para modelagem de progressão de cárie em nível dentário, microbioma oral e visão computacional/radiográfica.
+> Pipeline cientÃ­fico multimodal, reproduzÃ­vel e orientado por dados reais para modelagem de progressÃ£o de cÃ¡rie em nÃ­vel dentÃ¡rio, microbioma oral e visÃ£o computacional/radiogrÃ¡fica.
 
-**Autor:** Marcelo Claro Laranjeira — Professor de Geografia e Pedagogo, Crateús/CE, Brasil  
+**Autor:** Marcelo Claro Laranjeira â€” Professor de Geografia e Pedagogo, CrateÃºs/CE, Brasil  
 **ORCID:** [0000-0001-8996-2887](https://orcid.org/0000-0001-8996-2887)  
 **GitHub:** [@MarceloClaro](https://github.com/MarceloClaro)  
 **GeoMaker:** [bit.ly/geomaker](https://bit.ly/geomaker)
@@ -17,88 +17,88 @@
 
 ## Estado atual validado no Colab
 
-A versão corrente do notebook é a **v1.9.2**, em modo `SOMENTE_DADOS_REAIS=True`, com **SDD 5.0**, **TDD 5.0** e fluxograma interativo com pan, zoom, minimapa e navegação por 16 camadas.
+A versÃ£o corrente do notebook Ã© a **v1.9.2**, em modo `SOMENTE_DADOS_REAIS=True`, com **SDD 5.0**, **TDD 5.0** e fluxograma interativo com pan, zoom, minimapa e navegaÃ§Ã£o por 16 camadas.
 
-O arquivo salvo atualmente no Colab executou com sucesso o braço clínico-longitudinal até o modelo OOF clínico-espacial. Os módulos de microbioma, adaptação/curadoria visual, treinamento YOLO, runner TDD completo e exportação final estão implementados, mas **ainda não foram concluídos na execução salva atualmente**. Portanto, este README separa explicitamente o que está **implementado** do que já foi **executado com dados reais**.
+O arquivo salvo atualmente no Colab executou com sucesso o braÃ§o clÃ­nico-longitudinal atÃ© o modelo OOF clÃ­nico-espacial. Os mÃ³dulos de microbioma, adaptaÃ§Ã£o/curadoria visual, treinamento YOLO, runner TDD completo e exportaÃ§Ã£o final estÃ£o implementados, mas **ainda nÃ£o foram concluÃ­dos na execuÃ§Ã£o salva atualmente**. Portanto, este README separa explicitamente o que estÃ¡ **implementado** do que jÃ¡ foi **executado com dados reais**.
 
-| Componente | Implementado | Executado na sessão salva | Situação |
+| Componente | Implementado | Executado na sessÃ£o salva | SituaÃ§Ã£o |
 |---|:---:|:---:|---|
-| SDD 5.0 / TDD 5.0 — especificação | ✅ | ✅ | 46 requisitos e 58 testes carregados |
-| `Table_S1.xlsx` — ingestão/contrato | ✅ | ✅ | aprovado |
-| Reconstrução longitudinal por dente | ✅ | ✅ | contagens reproduzidas exatamente |
-| Modelo clínico-espacial OOF | ✅ | ✅ | resultados reais disponíveis |
-| Qiita 14341 / microbioma | ✅ | ⏳ | não concluído na sessão salva |
-| Adaptadores universais de imagem | ✅ | ⏳ | não concluídos na sessão salva |
-| QC visual / deduplicação / balanceamento | ✅ | ⏳ | não concluídos na sessão salva |
-| Treinamentos YOLO por domínio | ✅ | ⏳ | métricas finais ainda não promovidas |
-| FDI / associação lesão-dente | ✅ experimental | ⏳ | depende do braço visual/segmentação |
-| Runner TDD completo e acceptance gates | ✅ | ⏳ | depende dos módulos downstream |
-| Manifesto/ZIP final | ✅ | ⏳ | somente após todos os gates |
+| SDD 5.0 / TDD 5.0 â€” especificaÃ§Ã£o | âœ… | âœ… | 46 requisitos e 58 testes carregados |
+| `Table_S1.xlsx` â€” ingestÃ£o/contrato | âœ… | âœ… | aprovado |
+| ReconstruÃ§Ã£o longitudinal por dente | âœ… | âœ… | contagens reproduzidas exatamente |
+| Modelo clÃ­nico-espacial OOF | âœ… | âœ… | resultados reais disponÃ­veis |
+| Qiita 14341 / microbioma | âœ… | â³ | nÃ£o concluÃ­do na sessÃ£o salva |
+| Adaptadores universais de imagem | âœ… | â³ | nÃ£o concluÃ­dos na sessÃ£o salva |
+| QC visual / deduplicaÃ§Ã£o / balanceamento | âœ… | â³ | nÃ£o concluÃ­dos na sessÃ£o salva |
+| Treinamentos YOLO por domÃ­nio | âœ… | â³ | mÃ©tricas finais ainda nÃ£o promovidas |
+| FDI / associaÃ§Ã£o lesÃ£o-dente | âœ… experimental | â³ | depende do braÃ§o visual/segmentaÃ§Ã£o |
+| Runner TDD completo e acceptance gates | âœ… | â³ | depende dos mÃ³dulos downstream |
+| Manifesto/ZIP final | âœ… | â³ | somente apÃ³s todos os gates |
 
 ---
 
-## Resultado clínico real já reproduzido
+## Resultado clÃ­nico real jÃ¡ reproduzido
 
-O notebook reproduziu integralmente as contagens esperadas do braço clínico-longitudinal:
+O notebook reproduziu integralmente as contagens esperadas do braÃ§o clÃ­nico-longitudinal:
 
 | Auditoria | Valor reproduzido |
 |---|---:|
 | Registros de metadados | 2.504 |
-| Crianças | 89 |
+| CrianÃ§as | 89 |
 | Registro composto `T5161` | 220 |
 | Registros de dente individual | 2.284 |
-| Transições observadas | 1.388 |
-| Transições consecutivas `Δtimepoint=1` | 1.160 |
-| `H→H` | 913 |
-| `H→C` | 84 |
-| `C→C` | 163 |
-| `C→H` | 0 |
+| TransiÃ§Ãµes observadas | 1.388 |
+| TransiÃ§Ãµes consecutivas `Î”timepoint=1` | 1.160 |
+| `Hâ†’H` | 913 |
+| `Hâ†’C` | 84 |
+| `Câ†’C` | 163 |
+| `Câ†’H` | 0 |
 | Coorte de onset | 997 |
 
-A execução corrente do modelo clínico-espacial usa validação aninhada agrupada por criança e produziu:
+A execuÃ§Ã£o corrente do modelo clÃ­nico-espacial usa validaÃ§Ã£o aninhada agrupada por crianÃ§a e produziu:
 
-| Métrica | Resultado |
+| MÃ©trica | Resultado |
 |---|---:|
 | `n` | 997 |
-| Eventos `H→C` | 84 |
-| Prevalência | 0,084253 |
+| Eventos `Hâ†’C` | 84 |
+| PrevalÃªncia | 0,084253 |
 | PR-AUC | **0,182278** |
 | ROC-AUC | **0,738825** |
 | Brier | **0,078490** |
 | Log Loss | **0,274674** |
 
-Nos cinco folds externos registrados, a sobreposição de pacientes entre treino e teste foi **zero**.
+Nos cinco folds externos registrados, a sobreposiÃ§Ã£o de pacientes entre treino e teste foi **zero**.
 
-> Estes valores correspondem ao braço clínico da execução atual da v1.9.2. Eles não representam desempenho final multimodal nem validação clínica externa.
+> Estes valores correspondem ao braÃ§o clÃ­nico da execuÃ§Ã£o atual da v1.9.2. Eles nÃ£o representam desempenho final multimodal nem validaÃ§Ã£o clÃ­nica externa.
 
 ---
 
 ## Arquitetura multimodal
 
-O OdontoCA mantém domínios de evidência separados até que exista chave válida para integração.
+O OdontoCA mantÃ©m domÃ­nios de evidÃªncia separados atÃ© que exista chave vÃ¡lida para integraÃ§Ã£o.
 
 ```text
 DADOS REAIS
-│
-├── Clínica longitudinal — Table_S1 / Single-tooth ECC
-│   └── criança × dente × tempo → H→C
-│
-├── Microbioma oral — Qiita Study 14341 / BIOM
-│   └── SampleID → ASV → CLR → modelo nested
-│
-├── Fotografia intraoral — Zenodo 14827784
-│   └── detecção visual de cárie
-│
-├── Panorâmica pediátrica — Kaggle
-│   ├── Children Caries Detection Dataset
-│   └── Children's Dental Panoramic Radiographs
-│
-├── Anatomia dentária — Dental Anatomy YOLOv8
-│
-└── Segmentação/FDI — SegmentAnyTooth (opcional/licenciado)
+â”‚
+â”œâ”€â”€ ClÃ­nica longitudinal â€” Table_S1 / Single-tooth ECC
+â”‚   â””â”€â”€ crianÃ§a Ã— dente Ã— tempo â†’ Hâ†’C
+â”‚
+â”œâ”€â”€ Microbioma oral â€” Qiita Study 14341 / BIOM
+â”‚   â””â”€â”€ SampleID â†’ ASV â†’ CLR â†’ modelo nested
+â”‚
+â”œâ”€â”€ Fotografia intraoral â€” Zenodo 14827784
+â”‚   â””â”€â”€ detecÃ§Ã£o visual de cÃ¡rie
+â”‚
+â”œâ”€â”€ PanorÃ¢mica pediÃ¡trica â€” Kaggle
+â”‚   â”œâ”€â”€ Children Caries Detection Dataset
+â”‚   â””â”€â”€ Children's Dental Panoramic Radiographs
+â”‚
+â”œâ”€â”€ Anatomia dentÃ¡ria â€” Dental Anatomy YOLOv8
+â”‚
+â””â”€â”€ SegmentaÃ§Ã£o/FDI â€” SegmentAnyTooth (opcional/licenciado)
 ```
 
-A fusão em nível de paciente é bloqueada quando não são simultaneamente satisfeitas as chaves:
+A fusÃ£o em nÃ­vel de paciente Ã© bloqueada quando nÃ£o sÃ£o simultaneamente satisfeitas as chaves:
 
 ```text
 mesma coorte
@@ -111,95 +111,95 @@ mesma coorte
 
 ## SDD 5.0 + TDD 5.0
 
-O projeto utiliza **Specification-Driven Development** e **Test-Driven Development** como contratos metodológicos executáveis.
+O projeto utiliza **Specification-Driven Development** e **Test-Driven Development** como contratos metodolÃ³gicos executÃ¡veis.
 
 ### SDD 5.0
 
-- **46 requisitos obrigatórios**;
-- governança e proveniência;
+- **46 requisitos obrigatÃ³rios**;
+- governanÃ§a e proveniÃªncia;
 - contrato de schema externo;
-- modelagem clínica sem variáveis futuras;
+- modelagem clÃ­nica sem variÃ¡veis futuras;
 - nested preprocessing do microbioma;
-- ausência de leakage por paciente;
+- ausÃªncia de leakage por paciente;
 - tratamento visual anti-leakage;
-- política de split conservadora;
+- polÃ­tica de split conservadora;
 - isolamento do conjunto de teste;
 - interoperabilidade FHIR;
-- reprodutibilidade e segurança científica.
+- reprodutibilidade e seguranÃ§a cientÃ­fica.
 
 ### TDD 5.0
 
-**58 testes especificados antes das implementações:**
+**58 testes especificados antes das implementaÃ§Ãµes:**
 
-| Nível | Testes |
+| NÃ­vel | Testes |
 |---|---:|
 | UNIT | 20 |
 | INTEGRATION | 15 |
 | ACCEPTANCE | 23 |
 | **Total** | **58** |
 
-O runner final produz `PASS`, `SKIP` ou `FAIL`. Um `FAIL` obrigatório bloqueia a promoção dos resultados.
+O runner final produz `PASS`, `SKIP` ou `FAIL`. Um `FAIL` obrigatÃ³rio bloqueia a promoÃ§Ã£o dos resultados.
 
 ---
 
-## Braço clínico-longitudinal
+## BraÃ§o clÃ­nico-longitudinal
 
 O pipeline:
 
-1. lê `Table_S1.xlsx` preservando os nomes externos publicados;
-2. valida as 24 colunas obrigatórias;
+1. lÃª `Table_S1.xlsx` preservando os nomes externos publicados;
+2. valida as 24 colunas obrigatÃ³rias;
 3. remove o registro composto `T5161`;
-4. organiza observações por criança, dente e tempo;
-5. reconstrói `t → t+1`;
-6. mantém somente `Δtimepoint = 1`;
-7. restringe a coorte de onset aos dentes hígidos em `t`;
-8. define `0 = H→H` e `1 = H→C`;
-9. utiliza validação externa e interna agrupada por criança;
-10. usa PR-AUC como métrica primária de discriminação para o evento raro.
+4. organiza observaÃ§Ãµes por crianÃ§a, dente e tempo;
+5. reconstrÃ³i `t â†’ t+1`;
+6. mantÃ©m somente `Î”timepoint = 1`;
+7. restringe a coorte de onset aos dentes hÃ­gidos em `t`;
+8. define `0 = Hâ†’H` e `1 = Hâ†’C`;
+9. utiliza validaÃ§Ã£o externa e interna agrupada por crianÃ§a;
+10. usa PR-AUC como mÃ©trica primÃ¡ria de discriminaÃ§Ã£o para o evento raro.
 
-A representação clínica inclui contexto local de vizinhança dentária e features topológicas experimentais de antímeros. O notebook também possui um índice experimental de vulnerabilidade salivar; essas features devem ser interpretadas como modelagem de pesquisa e não como regra clínica validada.
+A representaÃ§Ã£o clÃ­nica inclui contexto local de vizinhanÃ§a dentÃ¡ria e features topolÃ³gicas experimentais de antÃ­meros. O notebook tambÃ©m possui um Ã­ndice experimental de vulnerabilidade salivar; essas features devem ser interpretadas como modelagem de pesquisa e nÃ£o como regra clÃ­nica validada.
 
 ---
 
 ## Microbioma oral
 
-O módulo microbiológico foi projetado para o **Qiita Study 14341**, com associação determinística `SampleID ↔ BIOM`.
+O mÃ³dulo microbiolÃ³gico foi projetado para o **Qiita Study 14341**, com associaÃ§Ã£o determinÃ­stica `SampleID â†” BIOM`.
 
 O preprocessing fica dentro do pipeline aninhado:
 
 ```text
 ASV
- ↓
+ â†“
 filtro no treino
- ↓
+ â†“
 pseudocontagem
- ↓
+ â†“
 CLR
- ↓
+ â†“
 StandardScaler
- ↓
+ â†“
 PCA
- ↓
+ â†“
 tuning interno
- ↓
-predição OOF
+ â†“
+prediÃ§Ã£o OOF
 ```
 
-O notebook compara três modelos no mesmo subconjunto pareado:
+O notebook compara trÃªs modelos no mesmo subconjunto pareado:
 
-- clínico;
+- clÃ­nico;
 - microbioma;
-- combinado clínico + microbioma.
+- combinado clÃ­nico + microbioma.
 
-O valor incremental é estimado com bootstrap por criança, preservando a estrutura de cluster.
+O valor incremental Ã© estimado com bootstrap por crianÃ§a, preservando a estrutura de cluster.
 
 ---
 
-## Visão computacional e radiográfica
+## VisÃ£o computacional e radiogrÃ¡fica
 
-### Adaptadores universais de anotação
+### Adaptadores universais de anotaÃ§Ã£o
 
-A v1.9.x não pressupõe uma estrutura única de dataset. O inventário tenta reconhecer e converter, de forma auditável:
+A v1.9.x nÃ£o pressupÃµe uma estrutura Ãºnica de dataset. O inventÃ¡rio tenta reconhecer e converter, de forma auditÃ¡vel:
 
 1. YAML YOLO oficial;
 2. TXT YOLO pareado globalmente por `stem`;
@@ -207,19 +207,19 @@ A v1.9.x não pressupõe uma estrutura única de dataset. O inventário tenta re
 4. COCO JSON;
 5. Pascal VOC XML;
 6. CSV com bounding boxes;
-7. máscaras binárias/semânticas → bounding boxes YOLO.
+7. mÃ¡scaras binÃ¡rias/semÃ¢nticas â†’ bounding boxes YOLO.
 
-Imagens sem ground truth são separadas como `inference_only` e não são convertidas silenciosamente em exemplos negativos.
+Imagens sem ground truth sÃ£o separadas como `inference_only` e nÃ£o sÃ£o convertidas silenciosamente em exemplos negativos.
 
-### Política de split
+### PolÃ­tica de split
 
 ```text
-split oficial disponível?
-├── sim → preservar
-└── não
-    ├── patient_id confiável → Group split por paciente
-    └── sem patient_id → train + val para desenvolvimento
-                         NÃO fabricar test independente
+split oficial disponÃ­vel?
+â”œâ”€â”€ sim â†’ preservar
+â””â”€â”€ nÃ£o
+    â”œâ”€â”€ patient_id confiÃ¡vel â†’ Group split por paciente
+    â””â”€â”€ sem patient_id â†’ train + val para desenvolvimento
+                         NÃƒO fabricar test independente
 ```
 
 ### Controle de qualidade
@@ -227,53 +227,53 @@ split oficial disponível?
 O notebook calcula por imagem:
 
 - largura e altura;
-- intensidade média;
+- intensidade mÃ©dia;
 - contraste;
-- variância do Laplaciano;
+- variÃ¢ncia do Laplaciano;
 - flag de blur;
 - baixo contraste;
-- subexposição;
-- superexposição.
+- subexposiÃ§Ã£o;
+- superexposiÃ§Ã£o.
 
-Por padrão, imagens difíceis não são excluídas automaticamente apenas para aumentar a métrica.
+Por padrÃ£o, imagens difÃ­ceis nÃ£o sÃ£o excluÃ­das automaticamente apenas para aumentar a mÃ©trica.
 
 ### Curadoria anti-leakage
 
 - SHA-256 por imagem;
-- deduplicação exata entre splits com prioridade `test > val > train`;
+- deduplicaÃ§Ã£o exata entre splits com prioridade `test > val > train`;
 - near-duplicates auditados por dHash + BK-tree;
-- distribuição de classes e áreas das caixas;
+- distribuiÃ§Ã£o de classes e Ã¡reas das caixas;
 - reamostragem limitada somente no `train`;
 - `val` e `test` permanecem inalterados.
 
 ### Tuning e treinamento
 
-A seleção de configuração utiliza **somente validação**:
+A seleÃ§Ã£o de configuraÃ§Ã£o utiliza **somente validaÃ§Ã£o**:
 
 ```text
-configuração-base ─┐
-                   ├─ treino curto → comparar em val → selecionar
-configuração tratada┘                              ↓
+configuraÃ§Ã£o-base â”€â”
+                   â”œâ”€ treino curto â†’ comparar em val â†’ selecionar
+configuraÃ§Ã£o tratadaâ”˜                              â†“
                                             treino final
-                                                 ↓
+                                                 â†“
                                           best.pt + SHA-256
-                                                 ↓
-                                  test legítimo, quando disponível
+                                                 â†“
+                                  test legÃ­timo, quando disponÃ­vel
 ```
 
-O projeto mantém fotografia intraoral, panorâmica pediátrica e anatomia dentária como domínios separados.
+O projeto mantÃ©m fotografia intraoral, panorÃ¢mica pediÃ¡trica e anatomia dentÃ¡ria como domÃ­nios separados.
 
 ---
 
-## Associação lesão ↔ dente e odontograma
+## AssociaÃ§Ã£o lesÃ£o â†” dente e odontograma
 
-A v1.9.2 possui associação geométrica experimental baseada em **Intersection over Lesion (IoL)**:
+A v1.9.2 possui associaÃ§Ã£o geomÃ©trica experimental baseada em **Intersection over Lesion (IoL)**:
 
 ```text
-IoL = área(interseção entre lesão e dente) / área da lesão
+IoL = Ã¡rea(interseÃ§Ã£o entre lesÃ£o e dente) / Ã¡rea da lesÃ£o
 ```
 
-A associação é usada somente quando existe detecção/segmentação dentária compatível. Casos ambíguos devem seguir para revisão profissional; detecção de cárie não é automaticamente convertida em número FDI sem suporte geométrico apropriado.
+A associaÃ§Ã£o Ã© usada somente quando existe detecÃ§Ã£o/segmentaÃ§Ã£o dentÃ¡ria compatÃ­vel. Casos ambÃ­guos devem seguir para revisÃ£o profissional; detecÃ§Ã£o de cÃ¡rie nÃ£o Ã© automaticamente convertida em nÃºmero FDI sem suporte geomÃ©trico apropriado.
 
 ---
 
@@ -281,18 +281,18 @@ A associação é usada somente quando existe detecção/segmentação dentária
 
 O notebook incorpora um fluxograma Mermaid/HTML/JavaScript com **16 camadas** e controles locais:
 
-- zoom `+` / `−`;
+- zoom `+` / `âˆ’`;
 - roda do mouse centrada no cursor;
 - pan por mouse, toque ou caneta;
-- botão `100%`;
-- enquadramento automático;
-- centralização;
-- setas de navegação;
+- botÃ£o `100%`;
+- enquadramento automÃ¡tico;
+- centralizaÃ§Ã£o;
+- setas de navegaÃ§Ã£o;
 - menu **Ir para** por camada;
 - minimapa sincronizado;
 - atalhos `+`, `-`, `0`, `1` e setas.
 
-A interface do fluxograma é independente da execução científica: falha de renderização não deve interromper o pipeline.
+A interface do fluxograma Ã© independente da execuÃ§Ã£o cientÃ­fica: falha de renderizaÃ§Ã£o nÃ£o deve interromper o pipeline.
 
 ---
 
@@ -300,22 +300,22 @@ A interface do fluxograma é independente da execução científica: falha de re
 
 | Fonte | Modalidade | Papel no projeto |
 |---|---|---|
-| HuangShiLab / Single-tooth ECC | longitudinal por dente | trajetória clínica e target `H→C` |
-| Qiita 14341 | microbioma 16S | valor incremental microbiológico |
-| Zenodo `10.5281/zenodo.14827784` | fotografia intraoral | detecção de cárie |
-| Children Caries Detection Dataset | panorâmica pediátrica | detecção de cárie infantil |
-| Children's Dental Panoramic Radiographs | panorâmica pediátrica | cárie/doenças dentárias |
-| Dental Anatomy Dataset — YOLOv8 | imagem odontológica | anatomia/localização |
-| SegmentAnyTooth | fotografia intraoral | segmentação e FDI opcional |
-| MD-OPG | panorâmica pediátrica | candidato futuro para segmentação por superfície |
+| HuangShiLab / Single-tooth ECC | longitudinal por dente | trajetÃ³ria clÃ­nica e target `Hâ†’C` |
+| Qiita 14341 | microbioma 16S | valor incremental microbiolÃ³gico |
+| Zenodo `10.5281/zenodo.14827784` | fotografia intraoral | detecÃ§Ã£o de cÃ¡rie |
+| Children Caries Detection Dataset | panorÃ¢mica pediÃ¡trica | detecÃ§Ã£o de cÃ¡rie infantil |
+| Children's Dental Panoramic Radiographs | panorÃ¢mica pediÃ¡trica | cÃ¡rie/doenÃ§as dentÃ¡rias |
+| Dental Anatomy Dataset â€” YOLOv8 | imagem odontolÃ³gica | anatomia/localizaÃ§Ã£o |
+| SegmentAnyTooth | fotografia intraoral | segmentaÃ§Ã£o e FDI opcional |
+| MD-OPG | panorÃ¢mica pediÃ¡trica | candidato futuro para segmentaÃ§Ã£o por superfÃ­cie |
 
-Os datasets visuais não são automaticamente pareados com a coorte longitudinal. Ausência de chave comum implica bloqueio de fusão em nível de paciente.
+Os datasets visuais nÃ£o sÃ£o automaticamente pareados com a coorte longitudinal. AusÃªncia de chave comum implica bloqueio de fusÃ£o em nÃ­vel de paciente.
 
 ---
 
 ## Como executar
 
-### Google Colab — recomendado
+### Google Colab â€” recomendado
 
 Abra diretamente:
 
@@ -323,11 +323,11 @@ Abra diretamente:
 
 Depois:
 
-1. selecione um runtime com GPU para o braço visual;
-2. reinicie a sessão se estiver reutilizando um runtime antigo;
-3. execute as células em ordem;
-4. não avance quando um gate obrigatório falhar;
-5. para resultados científicos, utilize somente saídas geradas por dados reais.
+1. selecione um runtime com GPU para o braÃ§o visual;
+2. reinicie a sessÃ£o se estiver reutilizando um runtime antigo;
+3. execute as cÃ©lulas em ordem;
+4. nÃ£o avance quando um gate obrigatÃ³rio falhar;
+5. para resultados cientÃ­ficos, utilize somente saÃ­das geradas por dados reais.
 
 ### Jupyter / VS Code
 
@@ -347,76 +347,76 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Dependências principais declaradas em `requirements.txt`: NumPy, pandas, SciPy, scikit-learn, openpyxl, requests, matplotlib, Pillow, PyYAML, biom-format e Ultralytics.
+DependÃªncias principais declaradas em `requirements.txt`: NumPy, pandas, SciPy, scikit-learn, openpyxl, requests, matplotlib, Pillow, PyYAML, biom-format e Ultralytics.
 
 ---
 
-## Estrutura atual do repositório
+## Estrutura atual do repositÃ³rio
 
 ```text
 OdontoCA/
-├── LICENSE
-├── README.md
-├── requirements.txt
-└── OdontoCA_v1_9_2_FLUXOGRAMA_INTERATIVO_PAN_ZOOM.ipynb
+â”œâ”€â”€ LICENSE
+â”œâ”€â”€ README.md
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ OdontoCA_v1_9_2_FLUXOGRAMA_INTERATIVO_PAN_ZOOM.ipynb
 ```
 
 ---
 
 ## Artefatos previstos pelo pipeline
 
-Quando a execução integral for aprovada, o notebook prevê exportar, entre outros:
+Quando a execuÃ§Ã£o integral for aprovada, o notebook prevÃª exportar, entre outros:
 
 - requisitos SDD;
-- especificações e resultados TDD;
-- matriz de rastreabilidade SDD → TDD;
-- auditorias clínicas e microbiológicas;
-- inventários e QC visual;
+- especificaÃ§Ãµes e resultados TDD;
+- matriz de rastreabilidade SDD â†’ TDD;
+- auditorias clÃ­nicas e microbiolÃ³gicas;
+- inventÃ¡rios e QC visual;
 - registros de falhas de parsing;
-- predições OOF;
-- métricas dos modelos;
+- prediÃ§Ãµes OOF;
+- mÃ©tricas dos modelos;
 - resultados de tuning;
 - pesos `best.pt` com SHA-256;
 - manifesto de reprodutibilidade;
-- relatório de validação;
+- relatÃ³rio de validaÃ§Ã£o;
 - `RiskAssessment` FHIR experimental;
 - pacote ZIP final de resultados.
 
 ---
 
-## Regra de promoção científica
+## Regra de promoÃ§Ã£o cientÃ­fica
 
 ```text
 DADO REAL
-   ↓
-INTEGRIDADE E PROVENIÊNCIA
-   ↓
+   â†“
+INTEGRIDADE E PROVENIÃŠNCIA
+   â†“
 SEM LEAKAGE
-   ↓
-VALIDAÇÃO / OOF
-   ↓
+   â†“
+VALIDAÃ‡ÃƒO / OOF
+   â†“
 TDD + ACCEPTANCE GATES
-   ↓
-APPROVED — PIPELINE DE PESQUISA
+   â†“
+APPROVED â€” PIPELINE DE PESQUISA
 ```
 
-`APPROVED` significa que os requisitos do pipeline de pesquisa foram satisfeitos. **Não significa validação clínica, autorização regulatória ou desempenho comprovado para uso assistencial.**
+`APPROVED` significa que os requisitos do pipeline de pesquisa foram satisfeitos. **NÃ£o significa validaÃ§Ã£o clÃ­nica, autorizaÃ§Ã£o regulatÃ³ria ou desempenho comprovado para uso assistencial.**
 
 ---
 
-## Limitações e segurança
+## LimitaÃ§Ãµes e seguranÃ§a
 
-- finalidade exclusivamente científica e educacional;
-- não é dispositivo médico;
-- não substitui avaliação odontológica;
-- nenhuma fusão cross-cohort é permitida sem chaves comuns válidas;
-- patient-disjoint visual só pode ser declarado quando existe identificação confiável de paciente;
-- resultados visuais e microbiológicos devem ser considerados pendentes até execução e aprovação dos respectivos gates;
+- finalidade exclusivamente cientÃ­fica e educacional;
+- nÃ£o Ã© dispositivo mÃ©dico;
+- nÃ£o substitui avaliaÃ§Ã£o odontolÃ³gica;
+- nenhuma fusÃ£o cross-cohort Ã© permitida sem chaves comuns vÃ¡lidas;
+- patient-disjoint visual sÃ³ pode ser declarado quando existe identificaÃ§Ã£o confiÃ¡vel de paciente;
+- resultados visuais e microbiolÃ³gicos devem ser considerados pendentes atÃ© execuÃ§Ã£o e aprovaÃ§Ã£o dos respectivos gates;
 - o recurso FHIR permanece `preliminary`;
-- métricas sintéticas não podem ser promovidas a resultados científicos.
+- mÃ©tricas sintÃ©ticas nÃ£o podem ser promovidas a resultados cientÃ­ficos.
 
 ---
 
-## Licença
+## LicenÃ§a
 
-Consulte o arquivo [`LICENSE`](./LICENSE) deste repositório para os termos de uso do código. Datasets, artigos e pesos de terceiros permanecem sujeitos às licenças de suas respectivas fontes.
+Consulte o arquivo [`LICENSE`](./LICENSE) deste repositÃ³rio para os termos de uso do cÃ³digo. Datasets, artigos e pesos de terceiros permanecem sujeitos Ã s licenÃ§as de suas respectivas fontes.
