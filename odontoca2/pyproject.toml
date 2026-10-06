@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odontoca2"
+version = "2.0.0a1"
+description = "Panoramica AI / OdontoCA 2.0 — auditável por SDD/TDD"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.0", "numpy>=1.24"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+  "regression: sentinel regression cases",
+  "clinical_ground_truth: requires expert-validated annotations"
+]
