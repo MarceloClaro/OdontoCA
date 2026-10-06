@@ -1,0 +1,14 @@
+{
+  "case_id": "CASE_117",
+  "filename": "117.jpg",
+  "sha256": "871bb224a0d93e394704dc9756cd60185b54b65103128d442f5ab404ab179bfb",
+  "purpose": [
+    "regression",
+    "tooth-detection",
+    "fdi-consistency",
+    "anatomy-safety",
+    "report-consistency"
+  ],
+  "clinical_ground_truth_status": "pending_expert_consensus",
+  "must_not_be_used_for_training": true
+}
